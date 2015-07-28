@@ -16,6 +16,22 @@ public class Main {
 
     private static void diamond_exercises() {
         isosceles_triangle_wrapper();
+        diamond_wrapper();
+    }
+
+    private static void diamond_wrapper() {
+        System.out.println("please input the size of diamond:");
+        int size = read_positive_int();
+        diamond(size);
+    }
+
+    private static void diamond(int size) {
+        for ( int i=0; i<size; i++ ){
+            draw_central_stars(i+1, size);
+        }
+        for ( int i=size-1; i>0; i-- ){
+            draw_central_stars(i, size);
+        }
     }
 
     private static void isosceles_triangle_wrapper() {
