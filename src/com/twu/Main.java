@@ -12,9 +12,9 @@ public class Main {
     public static final Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //triangle_exercises();
-        //diamond_exercises();
-        //fizzbuzz();
+        triangle_exercises();
+        diamond_exercises();
+        fizzbuzz();
         generate_wrapper();
     }
 

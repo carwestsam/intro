@@ -30,11 +30,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3716075" vertical-offset="152" max-vertical-offset="3105">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.3716075" vertical-offset="62" max-vertical-offset="3105">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1008#1017#0" expanded="true" />
+                <element signature="e#1002#1011#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -339,11 +339,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/twu/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3716075" vertical-offset="152" max-vertical-offset="3105">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.3716075" vertical-offset="62" max-vertical-offset="3105">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1008#1017#0" expanded="true" />
+            <element signature="e#1002#1011#0" expanded="true" />
           </folding>
         </state>
       </provider>
