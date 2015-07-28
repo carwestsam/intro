@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main {
 
 
+    public static final Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
         draw_horizontal_line_wrapper();
@@ -13,10 +14,13 @@ public class Main {
     }
 
     private static void draw_vertical_line_wrapper() {
-        Scanner in=new Scanner(System.in);
         System.out.println("please input the length of vertical line:");
-        int n=in.nextInt();
+        int n = read_a_int();
         draw_vertical_line(n);
+    }
+
+    private static int read_a_int() {
+        return in.nextInt();
     }
 
     private static void draw_vertical_line(int number) {
@@ -26,9 +30,8 @@ public class Main {
     }
 
     private static void draw_horizontal_line_wrapper() {
-        Scanner in=new Scanner(System.in);
         System.out.println("please input the length of horizontal line:");
-        int n=in.nextInt();
+        int n=read_a_int();
         draw_horizontal_line(n);
     }
 
