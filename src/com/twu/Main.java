@@ -1,7 +1,10 @@
 package com.twu;
 
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import static java.lang.Math.sqrt;
 
 public class Main {
 
@@ -11,12 +14,49 @@ public class Main {
     public static void main(String[] args) {
         //triangle_exercises();
         //diamond_exercises();
-        fizzbuzz_exercise();
+        //fizzbuzz();
+        generate_wrapper();
     }
 
-    private static void fizzbuzz_exercise() {
-        fizzbuzz();
+    /****************************************************/
+    /*
+    /*    start of generate
+    /*
+    /****************************************************/
+
+    private static void generate_wrapper() {
+        System.out.println("Please input the number to generate:");
+        int number = read_positive_int();
+        ArrayList<Integer> factors = generate(number);
+        for ( int i=0; i<factors.size(); i++ ){
+            System.out.print(factors.get(i));
+            System.out.print(" ");
+        }System.out.println();
     }
+
+    private static ArrayList<Integer> generate(int number) {
+        ArrayList<Integer> factors = new ArrayList<Integer>();
+        boolean[] flags = new boolean[number + 1];
+        double limit = sqrt(number)+1;
+        for ( int i=2; i< limit; i++ ) flags[i] = true;
+        for ( int i=2; i< limit; i++ ){
+            if ( flags[i] && number % i == 0 ){
+                factors.add(i);
+                int j = i;
+                while ( j < limit ){
+                    flags[j] = false;
+                    j += i;
+                }
+            }
+        }
+        return factors;
+    }
+
+    /****************************************************/
+    /*
+    /*    start of FizzBuzz
+    /*
+    /****************************************************/
 
     private static void fizzbuzz() {
         for ( int i=1; i<=100; i++ ){
