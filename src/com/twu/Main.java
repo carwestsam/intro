@@ -10,9 +10,40 @@ public class Main {
 
     public static void main(String[] args) {
         //triangle_exercises();
-
-        diamond_exercises();
+        //diamond_exercises();
+        fizzbuzz_exercise();
     }
+
+    private static void fizzbuzz_exercise() {
+        fizzbuzz();
+    }
+
+    private static void fizzbuzz() {
+        for ( int i=1; i<=100; i++ ){
+            fizzbuzz_call(i);
+        }
+    }
+
+    private static void fizzbuzz_call(int num) {
+        if ( num % 3 == 0 || num % 5 == 0 ){
+            if ( num % 3 == 0 && num % 5 == 0){
+                System.out.println("FizzBuzz");
+            }else if ( num % 3 == 0 ){
+                System.out.println("Fizz");
+            }else if ( num % 5 == 0 ){
+                System.out.println("Buzz");
+            }
+        }else {
+            System.out.println(num);
+        }
+    }
+
+
+    /****************************************************/
+    /*
+    /*    start of diamond_exercises
+    /*
+    /****************************************************/
 
     private static void diamond_exercises() {
         isosceles_triangle_wrapper();
