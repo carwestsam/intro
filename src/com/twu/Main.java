@@ -8,13 +8,31 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Scanner in=new Scanner(System.in);
-        System.out.println("please input the number of stars:");
-        int n=in.nextInt();
-        print_stars(n);
+        draw_horizontal_line_wrapper();
+        draw_vertical_line_wrapper();
     }
 
-    private static void print_stars(int number) {
+    private static void draw_vertical_line_wrapper() {
+        Scanner in=new Scanner(System.in);
+        System.out.println("please input the length of vertical line:");
+        int n=in.nextInt();
+        draw_vertical_line(n);
+    }
+
+    private static void draw_vertical_line(int number) {
+        for ( int i=0; i<number; i++ ){
+            System.out.println("*");
+        }
+    }
+
+    private static void draw_horizontal_line_wrapper() {
+        Scanner in=new Scanner(System.in);
+        System.out.println("please input the length of horizontal line:");
+        int n=in.nextInt();
+        draw_horizontal_line(n);
+    }
+
+    private static void draw_horizontal_line(int number) {
         for ( int i=0; i<number; i++ ){
             System.out.print("*");
         }System.out.println("");
